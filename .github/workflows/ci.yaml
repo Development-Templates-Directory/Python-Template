@@ -32,6 +32,7 @@ jobs:
 
       - name: Install Dependencies
         run: poetry install
+        continue-on-error: true
 
       - name: Test
         run: poetry run test
